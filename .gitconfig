@@ -27,6 +27,7 @@
   # prevent gc
   generic = g move-first-line
   generic = G move-last-line
+  excludesfile = /opt/boxen/config/git/gitignore
 
 [push]
   default = simple
@@ -34,3 +35,9 @@
 [include]
   # make sure the file exists
   path = ~/.gitconfig.local
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+protocol = https

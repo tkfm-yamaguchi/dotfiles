@@ -4,7 +4,9 @@ DotFiles = %w[.gitconfig .tmux.conf]
 task :bootstrap do
   cd ENV["HOME"] do
     DotFiles.each do |dotfile|
-      ln_s File.join(__dir__, dotfile), dotfile
+      unless File.exist?(dotfile)
+        ln_s File.join(__dir__, dotfile), dotfile
+      end
     end
   end
 end
