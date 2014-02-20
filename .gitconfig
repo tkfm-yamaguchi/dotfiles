@@ -12,6 +12,7 @@
   filelog = log -u
   graph = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset'
   history = log --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset %Cgreen(%cr)'
+  diffw = diff --color-words
 
 [color]
   ui = true
