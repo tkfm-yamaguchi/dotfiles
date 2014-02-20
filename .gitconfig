@@ -1,5 +1,6 @@
 [alias]
   st = status
+  sst = status --short --branch
   hist = log --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset'
   sup = "submodule foreach \"git co master; git pull\""
   co = checkout
