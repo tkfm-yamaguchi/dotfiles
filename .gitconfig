@@ -25,6 +25,10 @@
 [diff "json"]
   textconv = "perl -MJSON -0e \"print JSON->new->canonical->pretty->encode(decode_json(<>))\""
 
+# exiftool should be installed
+[diff "exif"]
+  textconv = "exiftool"
+
 [tig "bind"]
   # prevent gc
   generic = g move-first-line
