@@ -20,6 +20,7 @@
 [core]
   quotepath = false
   autocrlf = input
+  attributesfile = ~/.dotfiles/.gitattributes
 
 [diff "json"]
   textconv = "perl -MJSON -0e \"print JSON->new->canonical->pretty->encode(decode_json(<>))\""
