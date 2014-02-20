@@ -42,3 +42,9 @@ helper = /opt/boxen/bin/boxen-git-credential
 
 [hub]
 protocol = https
+
+# http://git-scm.com/docs/git-rerere.html
+# http://d.hatena.ne.jp/unpush/20091010/1255186302
+[rerere]
+  enabled = true
+
