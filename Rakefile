@@ -1,5 +1,9 @@
 
-DotFiles = %w[.gitconfig .tmux.conf]
+DotFiles = %w[
+  .gitconfig
+  .pryrc
+  .tmux.conf
+]
 
 task :bootstrap do
   cd ENV["HOME"] do
