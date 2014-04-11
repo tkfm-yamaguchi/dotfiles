@@ -5,6 +5,7 @@ DotFiles = %w[
   .tmux.conf
 ]
 
+desc "bootstrap the dotfiles to $HOME"
 task :bootstrap do
   cd ENV["HOME"] do
     DotFiles.each do |dotfile|
@@ -15,6 +16,7 @@ task :bootstrap do
   end
 end
 
+desc "remove the dotfiles from $HOME"
 task :clean do
   cd ENV["HOME"] do
     DotFiles.each do |dotfile|
