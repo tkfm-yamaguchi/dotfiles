@@ -2,6 +2,7 @@
 DotFiles = %w[
   .gitconfig
   .pryrc
+  .tigrc
   .tmux.conf
 ]
 

@@ -22,6 +22,7 @@
   quotepath = false
   autocrlf = input
   attributesfile = ~/.dotfiles/.gitattributes
+  excludesfile = /opt/boxen/config/git/gitignore
 
 [diff "json"]
   textconv = "perl -MJSON -0e \"print JSON->new->canonical->pretty->encode(decode_json(<>))\""
@@ -29,12 +30,6 @@
 # exiftool should be installed
 [diff "exif"]
   textconv = "exiftool"
-
-[tig "bind"]
-  # prevent gc
-  generic = g move-first-line
-  generic = G move-last-line
-  excludesfile = /opt/boxen/config/git/gitignore
 
 [push]
   default = simple

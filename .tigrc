@@ -1,0 +1,16 @@
+
+##### Key bindings {{{
+# 'push' : current branch to origin
+bind main P !git push origin %(branch)
+# 'fetch'
+bind main E !git fetch
+
+# Revert the commit of under the cursor
+bind main V !git revert %(commit)
+
+# Move cursor, also prevents gc
+bind generic g move-first-line
+bind generic G move-last-line
+# }}}
+
+# vim: ft=conf foldmethod=marker
