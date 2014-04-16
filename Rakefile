@@ -21,7 +21,7 @@ desc "remove the dotfiles from $HOME"
 task :clean do
   cd ENV["HOME"] do
     DotFiles.each do |dotfile|
-      rm dotfile
+      rm_f dotfile
     end
   end
 end
