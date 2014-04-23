@@ -16,13 +16,23 @@ Pry.config.commands.alias_command 'w', 'whereami'
 
 
 # External library configurations
-if defined? AwesomePrint
-  begin
-    require 'awesome_print'
-    Pry.print = proc{|output, value| output.puts value.ai }
-  rescue LoadError => err
-    warn "Failed to load 'awesome_print'"
-    warn err
-  end
+begin
+  require 'awesome_print'
+  Pry.config.print = proc { |output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output) }
+rescue LoadError => err
+  warn "Failed to load 'awesome_print' :("
+  warn err
 end
 
+begin
+  require 'hirb'
+
+  Hirb.enable
+  old_print = Pry.config.print
+  Pry.config.print = proc do |output, value|
+    Hirb::View.view_or_page_output(value) || old_print.call(output, value)
+  end
+rescue LoadError => err
+  warn "Failed to load 'Hirb' :("
+  warn err
+end
