@@ -1,0 +1,17 @@
+{
+    "max_line_length": {
+        "name": "max_line_length",
+        "value": 80,
+        "level": "ignore",
+        "limitComments": true
+    },
+    "indentation": {
+        "name": "indentation",
+        "value": 4,
+        "level": "error"
+    },
+    "no_empty_param_list": {
+        "name": "no_empty_param_list",
+        "level": "error"
+    }
+}
