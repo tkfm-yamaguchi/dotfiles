@@ -1,5 +1,6 @@
 
 DotFiles = %w[
+  .gemrc
   .gitconfig
   .pryrc
   .tigrc

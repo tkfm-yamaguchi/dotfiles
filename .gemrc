@@ -1,0 +1,11 @@
+install: --no-document
+update: --no-document
+benchmark: false
+verbose: true
+update_sources: true
+backtrace: true
+
+# needs gem-src and ghq
+gemrc_use_ghq: true
+
+# vim: ft=yaml
