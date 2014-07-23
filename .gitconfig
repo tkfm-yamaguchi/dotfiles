@@ -1,54 +1,8 @@
-[alias]
-  st = status
-  sst = status --short --branch
-  hist = log --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset'
-  sup = "submodule foreach \"git co master; git pull\""
-  co = checkout
-  cancel = !git commit -a -m 'Temporary commit for cancel' && git reset --hard HEAD~
-  df = diff
-  cm = commit
-  push-rm-tag = "!f(){ git push $1 :refs/tags/$2; }; f"
-  push-tags = "!f(){ git push $1 --tags; }; f"
-  unstage = reset HEAD
-  filelog = log -u
-  graph = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset'
-  history = log --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset %Cgreen(%cr)'
-  diffw = diff --color-words
-  remotes = remote -v
-  branches = branch -a
-
-[color]
-  ui = true
-
-[core]
-  quotepath = false
-  autocrlf = input
-  attributesfile = ~/.dotfiles/.gitattributes
-  excludesfile = /opt/boxen/config/git/gitignore
-  precomposeunicode = true
-
-[diff "json"]
-  textconv = "perl -MJSON -0e \"print JSON->new->canonical->pretty->encode(decode_json(<>))\""
-
-# exiftool should be installed
-[diff "exif"]
-  textconv = "exiftool"
-
-[push]
-  default = simple
+# Some software overwrites my configuration without any notices (like boxen).
+# It discourages to keep the portability so that I write a specific configurations
+# in a separated ( this ) file.
 
 [include]
-  # make sure the file exists
+  path = ~/.dotfiles/my.gitconfig
   path = ~/.gitconfig.local
-
-[credential]
-helper = /opt/boxen/bin/boxen-git-credential
-
-[hub]
-protocol = https
-
-# http://git-scm.com/docs/git-rerere.html
-# http://d.hatena.ne.jp/unpush/20091010/1255186302
-[rerere]
-  enabled = true
 
