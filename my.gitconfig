@@ -46,6 +46,6 @@
   enabled = true
 
 [ghq]
-  root = ~/local/src
+  root = ~/local/usr/src
 
 # vim: ft=gitconfig
