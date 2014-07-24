@@ -3,6 +3,6 @@
 # in a separated ( this ) file.
 
 [include]
-  path = ~/.dotfiles/my.gitconfig
-  path = ~/.gitconfig.local
+  path = ~/.my.gitconfig
+  path = ~/.local.gitconfig
 
