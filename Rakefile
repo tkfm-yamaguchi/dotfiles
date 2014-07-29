@@ -7,6 +7,7 @@ DotFiles = %w[
   .pryrc
   .tigrc
   .tmux.conf
+  .vimperatorrc
 ]
 
 desc "bootstrap the dotfiles to $HOME"

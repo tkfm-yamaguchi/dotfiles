@@ -1,0 +1,106 @@
+" Configuration file for vimperator(FireFox extension)
+
+" Title(default was "[pagetilte] - Vimperator")
+set titlestring=ζ'ヮ')ζ＜うっうー
+
+" QuickHint's characters - use alphabet
+set hc="abcdefghijklmnopqrstuvwxyz"
+
+" タブの閉じるボタン非表示
+set! browser.tabs.closeButtons=2
+
+" ページロード時にテキストボックスにフォーカスするのを防ぐ
+" set focuscontent
+
+"Google Suggest と ブックマーク補完を使用する
+set complete=blSfs
+
+" ブックマーク
+map <C-b><C-k> :bmark<CR>
+
+" hit-a-hintのhintに表示する属性
+" (value|label|name)
+set hintinputs=""
+
+" Reloading this file
+" FIXME: plugin has not loaded
+map <C-i> :mapc<CR>:cmapc<CR>:imapc<CR>:source file:///home/yamaguchi/.vimperatorrc<CR>:echo "Reloaded!"<CR>
+
+" Search Highlight OFF
+map <ESC><ESC> :noh<CR>
+
+" ステータスライン内ではIMEをoffにする
+style -name commandline-ime chrome://* #liberator-commandline-command input {ime-mode: inactive;}
+
+" For on GNU/Linux (Install xdgv)
+" XXX: Not works so far.
+" Ctrl+Shift+$でオン (ibus-setupで設定済み)
+let g:ime_activate_xkey='\[Control]\[Shift]$'
+" Ctrl+Shift+Spaceでオフ (ibus-setupで設定済み)
+let g:ime_deactivate_xkey='\[Control]\[Shift] '
+" コマンドラインで自動的にオフ(他にinsertおよびcmd,insertを指定可能)
+let g:imeoff='cmd'
+
+" ]]/[[ で移動
+set nextpattern=^次(へ|の|ペ),^続き,\bnext\b,^>$,^(>>|&#187;)$,^(>|&#187;),(>|&#187;)$,\bmore\b
+set previouspattern=^前(へ|の|ペ),^戻る,\bprev|previous\b,^<$,^(<<|&#171;)$,^(<|&#171;),(<|&#171;)$
+
+" hit-a-hintのフォントスタイル
+" http://d.hatena.ne.jp/hayamiz/20090519/1242739865
+highlight! Hint font-size: 12pt; background: #CCF; color: #333; border: 1px solid yellow; font-family: Ricty,"MS ゴシック"; padding: 0 3px; opacity:0.85;
+
+" move like emacs in the text box
+inoremap <C-f> <Right>
+cnoremap <C-f> <Right>
+inoremap <C-b> <Left>
+cnoremap <C-b> <Left>
+inoremap <C-n> <Down>
+cnoremap <C-n> <Down>
+inoremap <C-p> <Up>
+cnoremap <C-p> <Up>
+
+
+" カラースキーム
+colorscheme sweets
+
+" open the source in another tab
+map <C-z> :tab viewsource<CR>
+
+" ステータスラインのフォントサイズを大きくする
+" http://blog.ruedap.com/entry/20100812/vimperator_statusbar_fontsize
+style chrome://* <<EOM
+#liberator-commandline { /* command line */
+    font-family: Menlo, "M+1VM+IPAG circle", Monaco, monospace !important;
+    background-color: #222 !important;
+    color: #fff !important;
+    font-weight: normal !important;
+    font-size: 12pt !important;
+}
+
+#liberator-statusline { /* url, progress arrow, [n/n] n% */
+    font-family: Menlo, "M+1VM+IPAG circle", Monaco, monospace !important;
+    font-weight: normal !important;
+    font-size: 12pt !important;
+    padding:2px 2px !important;
+}
+.hl-StatusLine { /* regular page */
+    background-color: #000 !important;
+    color: #B0FF00 !important;
+}
+.hl-StatusLineSecure { /* secure page */
+    background-color: #B0FF00 !important; /* light green */
+    color: black !important;
+}
+EOM
+
+" clock style
+style -name clock chrome://* <<EOM
+#liberator-plugin-clock-box > * {
+    background-color: #000 !important;
+    color: #B0FF00 !important;
+    font-size: 10pt !important;
+}
+EOM
+
+
+" vim: ft=vim
