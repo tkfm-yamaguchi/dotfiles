@@ -66,6 +66,9 @@ colorscheme sweets
 " open the source in another tab
 map <C-z> :tab viewsource<CR>
 
+" remove
+nnoremap <C-l> <Nop>
+
 " ステータスラインのフォントサイズを大きくする
 " http://blog.ruedap.com/entry/20100812/vimperator_statusbar_fontsize
 style chrome://* <<EOM
