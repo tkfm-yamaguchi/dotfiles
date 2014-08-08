@@ -1,5 +1,6 @@
 
 DotFiles = %w[
+  .Xmodmap
   .gemrc
   .gitconfig
   .my.gitconfig

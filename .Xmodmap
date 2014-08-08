@@ -1,0 +1,11 @@
+
+! set CapsLock -> Ctrl(left)
+keycode 66 = Control_L
+clear Lock
+add Control = Control_L
+
+! set Kana -> Esc
+keycode 100 = Escape
+
+
+pointer = 1 2 3 4 5 6 7 8 9 10 11 12
