@@ -30,7 +30,8 @@ set previouspattern=^前(へ|の|ペ),^戻る,\bprev|previous\b,^<$,^(<<|&#171;)
 nnoremap <C-i> :<C-u>source ~/.vimperatorrc<CR>:echo "Reloaded!"<CR>
 
 " Search Highlight OFF
-nnoremap <ESC><ESC> :noh<CR>
+nnoremap <Esc><Esc> :noh<CR>
+nnoremap <C-[><C-[> :noh<CR>
 
 " move like in the terminal in the editing box (input:text, textarea ...etc.)
 inoremap <C-f> <Right>
@@ -52,7 +53,6 @@ nnoremap D d
 
 " remove deafult map
 nnoremap <C-l> <Nop>
-
 
 
 
