@@ -20,6 +20,8 @@
   diffw = diff --color-words
   remotes = remote -v
   branches = branch -a
+  amend = commit --amend
+  reamend = commit --amend -C HEAD
 
 [color]
   ui = true
