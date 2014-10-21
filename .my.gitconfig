@@ -32,6 +32,10 @@
   attributesfile = ~/.dotfiles/.gitattributes
   precomposeunicode = true
 
+[diff]
+  algorithm = histogram
+  # algorithm = patience
+
 [diff "json"]
   textconv = "perl -MJSON -0e \"print JSON->new->canonical->pretty->encode(decode_json(<>))\""
 
@@ -50,4 +54,12 @@
 [ghq]
   root = ~/local/usr/src
 
-# vim: ft=gitconfig
+## Examples
+#
+#[url "git@github.com:"]
+#  pushinsteadof = "git://github.com/"
+#  pushinsteadof = "https://github.com/"
+
+
+
+# vim: ft=gitconfig sw=2 ts=2
