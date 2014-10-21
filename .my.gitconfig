@@ -36,6 +36,9 @@
   algorithm = histogram
   # algorithm = patience
 
+[rebase]
+  autosquash = true
+
 [diff "json"]
   textconv = "perl -MJSON -0e \"print JSON->new->canonical->pretty->encode(decode_json(<>))\""
 
