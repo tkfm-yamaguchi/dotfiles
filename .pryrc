@@ -18,7 +18,7 @@ Pry.config.commands.alias_command 'w', 'whereami'
 # External library configurations
 begin
   require 'awesome_print'
-  Pry.config.print = proc { |output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output) }
+  AwesomePrint.pry!
 rescue LoadError => err
   warn "Failed to load 'awesome_print' :("
   warn err
