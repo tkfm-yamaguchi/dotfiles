@@ -12,6 +12,7 @@ DotFiles = %w[
   .tigrc
   .tmux.conf
   .vimperatorrc
+  Brewfile.sh
 ]
 
 desc "bootstrap the dotfiles to $HOME"
