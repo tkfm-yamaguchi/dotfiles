@@ -32,6 +32,7 @@
   autocrlf = input
   attributesfile = ~/.dotfiles/.gitattributes
   precomposeunicode = true
+	excludesfile = ~/.gitignore
 
 [diff]
   algorithm = histogram
