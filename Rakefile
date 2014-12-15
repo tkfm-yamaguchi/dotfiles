@@ -2,6 +2,7 @@
 DotFiles = %w[
   .Xmodmap
   .bash_aliases
+  .bash_profile
   .ctags
   .gemrc
   .gitconfig
