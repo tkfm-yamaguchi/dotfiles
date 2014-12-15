@@ -57,7 +57,7 @@
   enabled = true
 
 [ghq]
-  root = ~/local/usr/src
+  root = ~/local/go/src
 
 ## Examples
 #
