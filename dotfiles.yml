@@ -1,0 +1,20 @@
+
+---
+
+common:
+  - .Xmodmap
+  - .bash_aliases
+  - .ctags
+  - .gemrc
+  - .gitconfig
+  - .my.gitconfig
+  - .peco
+  - .pryrc
+  - .tigrc
+  - .tmux.conf
+  - .vimperatorrc
+
+darwin:
+  - .bash_profile
+  - Brewfile.sh
+
