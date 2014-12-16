@@ -32,6 +32,7 @@ brew install go
 brew install imagemagick
 brew install rbenv ruby-build
 brew install tmux
+brew install reattach-to-user-namespace
 brew install wget
 brew install zsh
 brew install mysql
