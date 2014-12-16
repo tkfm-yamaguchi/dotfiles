@@ -9,3 +9,8 @@ export GOPATH="$HOME/local"
 # use go's executables
 export PATH="$GOPATH/bin:$PATH"
 
+
+## Ruby
+# rbenv, install via brew
+eval "$(rbenv init -)"
+
