@@ -1,4 +1,15 @@
 
+## Hierarchy
+
+```
+$HOME/local
+  bin/
+  src/
+  pkg/
+  opt/
+    golang/
+```
+
 ## Git
 
 ### `git diff` for png
