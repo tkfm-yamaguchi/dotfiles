@@ -38,6 +38,7 @@ brew install zsh
 brew install mysql
 brew install htop-osx
 brew install peco
+brew install nkf
 
 
 
