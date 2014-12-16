@@ -5,7 +5,7 @@
 
 ## Go (Lang)
 # set local go repository
-export GOPATH="$HOME/local/go"
+export GOPATH="$HOME/local"
 # use go's executables
 export PATH="$GOPATH/bin:$PATH"
 
