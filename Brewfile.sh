@@ -39,6 +39,7 @@ brew install mysql
 brew install htop-osx
 brew install peco
 brew install nkf
+brew install pt
 
 
 
