@@ -26,7 +26,7 @@ brew tap peco/peco
 ## brew softwares
 
 brew install curl
-brew install gcc
+# brew install gcc    # consuming resources a lot
 brew install git
 brew install go
 brew install imagemagick
