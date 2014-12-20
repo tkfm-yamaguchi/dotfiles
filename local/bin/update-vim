@@ -1,0 +1,115 @@
+#!/bin/bash
+# coding: utf-8
+
+set -ex
+
+# --------------------
+
+# Ubuntu 12.04
+# PKGPYTHON3=python3-dev
+# Ubuntu 13.04, 14.04
+# PKGPYTHON3=libpython3-dev
+
+# apt-get build-dep vim
+# apt-get install mercurial \
+#                 gettext \
+#                 paco \
+#                 libncurses5-dev \
+#                 libxmu-dev \
+#                 libgnomeui-dev \
+#                 libperl-dev \
+#                 ruby-dev \
+#                 python-dev \
+#                 ${PKGPYTHON3}
+#                 luajit luajit-*.*
+
+# --------------------
+
+COMPILED_BY="yamaguchi <tkfm.yamaguchi@gmail.com>"
+
+VIM_NAME=vim
+VIM_SRC_DIR="$HOME/local/src/code.google.com/p/vim"
+
+# Since paco was abandoned and renamed to 'porg',
+# we switch to the enable one.
+SOFTWARE_MANAGER="paco"
+if command -v "porg" >/dev/null 2>&1 ; then
+    SOFTWARE_MANAGER="porg"
+fi
+
+# --------------------
+
+# # Ubuntu 12.04:
+# CONFDIRPYTHON3=/usr/lib/python3.2/config-3.2mu
+
+# # Ubuntu 13.04:
+# CONFDIRPYTHON3=/usr/lib/python3.3/config-3.3m-x86_64-linux-gnu
+
+# # Ubuntu 14.04:
+# CONFDIRPYTHON3=/usr/lib/python3.4/config-3.4m-x86_64-linux-gnu
+
+# if pyenv is used (replace `*` with appropriate number) ...
+#   $ env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 2.7.*
+#   $ env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.*.*
+#   $ pyenv global 2.7.* 3.*.*
+
+# --------------------
+
+cd $VIM_SRC_DIR
+
+# --------------------
+
+echo "Updating repository"
+hg pull
+hg update
+
+read -p "Continue? [Y/n] > " ANS
+if [[ $ANS =~ ^n|^N ]]; then
+    echo Quit to update
+    exit 0
+fi
+
+# --------------------
+
+make clean
+make distclean
+
+./configure \
+    --enable-fail-if-missing \
+    --prefix="$HOME/local" \
+    --disable-darwin \
+    --disable-selinux \
+    --enable-fontset \
+    --enable-gnome-check \
+    --enable-gui=gtk2 \
+    --enable-multibyte \
+    --enable-perlinterp \
+    --enable-pythoninterp=dynamic \
+    --enable-python3interp=dynamic \
+    --enable-rubyinterp \
+    --enable-luainterp \
+    --with-vim-name=${VIM_NAME} \
+    --with-compiledby="${COMPILED_BY}" \
+    --with-features=huge \
+    --with-tlib=ncurses \
+    --with-luajit \
+    # --with-python3-config-dir="${CONFDIRPYTHON3}"
+
+# configure status check
+status=$?
+if [ $status -ne 0 ]; then
+    echo "configure failed with status $status. abort."
+    exit $status
+fi
+
+make
+
+# --------------------
+
+read -p "Replace current vim. Press [Enter] key to continue..."
+
+# uninstall
+sudo $SOFTWARE_MANAGER --remove --batch $VIM_NAME
+
+# sudo make install
+sudo $SOFTWARE_MANAGER --log --package=${VIM_NAME} make install

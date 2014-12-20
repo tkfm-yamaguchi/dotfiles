@@ -18,3 +18,6 @@ darwin:
   - .bash_profile
   - Brewfile.sh
 
+linux:
+  - local/bin/update-vim
+
