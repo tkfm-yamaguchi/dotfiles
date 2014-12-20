@@ -19,6 +19,8 @@ task :load_config do
   case RbConfig::CONFIG["host_os"]
   when /^darwin/
     @dotfiles += @config["darwin"]
+  when /^linux/
+    @dotfiles += @config["linux"]
   end
 end
 
