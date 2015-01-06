@@ -1,0 +1,1 @@
+../repositories/vimperator-plugins/caret-hint.js

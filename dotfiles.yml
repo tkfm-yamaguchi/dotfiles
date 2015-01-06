@@ -13,6 +13,7 @@ common:
   - .tigrc
   - .tmux.conf
   - .vimperatorrc
+  - .vimperator
 
 darwin:
   - .bash_profile
