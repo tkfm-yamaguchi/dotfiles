@@ -40,6 +40,9 @@ brew install htop-osx
 brew install peco
 brew install nkf
 brew install pt
+brew install wine
+brew install winetricks
+brew install zenity
 
 
 
