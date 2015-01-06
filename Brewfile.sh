@@ -61,6 +61,7 @@ brew cask install xtrafinder
 brew cask install google-japanese-ime
 brew cask install xquartz
 brew cask install karabiner
+brew cask install insomniax
 
 
 
