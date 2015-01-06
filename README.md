@@ -30,6 +30,11 @@ My favorites are:
 * Symphonic
 
 
+### vimperator
+
+Make sure to init/update the submodule for vimperator-plugins repository.
+
+
 ## TODO
 
 * Use Makefile instead of Rakefile
