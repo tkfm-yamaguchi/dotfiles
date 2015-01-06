@@ -31,7 +31,7 @@ case `uname -s` in
     "Linux" )
 
         ## colored ls
-        alias ls='ls --colored'
+        alias ls='ls --color'
 
 
         ;;
