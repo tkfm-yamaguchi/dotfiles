@@ -1,0 +1,10 @@
+
+set incsearch
+set hlsearch
+
+set ignorecase
+set smartcase
+
+nnoremap <Esc><Esc> :noh<CR>
+nnoremap <C-[><C-[> :noh<CR>
+
