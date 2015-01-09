@@ -43,6 +43,7 @@ brew install pt
 brew install wine
 brew install winetricks
 brew install zenity
+brew install scala
 
 
 
