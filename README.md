@@ -50,6 +50,21 @@ You should be certain that you trust any software you grant root privileges.
 ```
 
 
+### Alcatraz
+
+[Alcatraz | The Package manager for Xcode](http://alcatraz.io/)
+
+
+```
+curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+```
+
+My favorite plugins:
+
+* FuzzyAutocomplete
+* XVim
+
+
 ## TODO
 
 * Use Makefile instead of Rakefile
