@@ -35,6 +35,21 @@ My favorites are:
 Make sure to init/update the submodule for vimperator-plugins repository.
 
 
+### htop's privilege issue
+
+It is said while installing htop that:
+
+```
+htop-osx requires root privileges to correctly display all running processes.
+You can either run the program via `sudo` or set the setuid bit:
+
+  sudo chown root:wheel /usr/local/Cellar/htop-osx/0.8.2.1/bin/htop
+  sudo chmod u + s /usr/local/Cellar/htop-osx/0.8.2.1/bin/htop
+
+You should be certain that you trust any software you grant root privileges.
+```
+
+
 ## TODO
 
 * Use Makefile instead of Rakefile
