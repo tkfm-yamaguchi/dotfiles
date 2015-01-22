@@ -65,6 +65,33 @@ My favorite plugins:
 * XVim
 
 
+## Setup for OSX
+
+* Clone and setup: vim conf
+* Clone and setup: zsh conf
+* xcode
+* xcode License (`sudo xcodebuild -license`)
+* [homebrew](http://brew.sh) (`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`)
+* Brewfile
+* [MacVim-Kaoriya](https://github.com/splhack/macvim/tags)
+
+
+### rbenv
+
+To use Homebrew's directories rather than ~/.rbenv add to your profile:
+
+```
+export RBENV_ROOT=/usr/local/var/rbenv
+```
+
+To enable shims and autocompletion add to your profile:
+
+```
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+```
+
+
+
 ## TODO
 
 * Use Makefile instead of Rakefile
