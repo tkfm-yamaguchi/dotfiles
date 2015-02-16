@@ -57,17 +57,17 @@ brew cask install bettertouchtool
 brew cask install firefox
 brew cask install gimp
 brew cask install google-chrome chrome-remote-desktop-host
+brew cask install google-japanese-ime
 brew cask install inkscape
+brew cask install insomniax
 brew cask install iterm2
 brew cask install java
+brew cask install karabiner
+brew cask install scroll-reverser
 brew cask install skype
 brew cask install virtualbox
-brew cask install xtrafinder
-brew cask install google-japanese-ime
 brew cask install xquartz
-brew cask install karabiner
-brew cask install insomniax
-brew cask install scroll-reverser
+brew cask install xtrafinder
 
 
 
