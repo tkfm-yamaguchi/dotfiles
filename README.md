@@ -30,6 +30,14 @@ My favorites are:
 * Symphonic
 
 
+### powerline font
+
+```
+cp -f /usr/local/Cellar/ricty/*.*.*/share/fonts/Ricty*.ttf ~/Library/Fonts/ 
+fc-cache -vf
+```
+
+
 ### vimperator
 
 Make sure to init/update the submodule for vimperator-plugins repository.
