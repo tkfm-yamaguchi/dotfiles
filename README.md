@@ -98,6 +98,11 @@ To enable shims and autocompletion add to your profile:
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 ```
 
+### Karabiner
+
+```
+/Applications/Karabiner.app/Contents/Library/bin/karabiner export > karabiner.sh
+```
 
 
 ## TODO
