@@ -33,6 +33,10 @@ case `uname -s` in
         ## colored ls
         alias ls='ls --color'
 
+        ## want to use pbcopy on linux
+        if type xsel >/dev/null 2>&1; then
+            alias pbcopy='xsel --clipboard --input'
+        fi
 
         ;;
 esac
