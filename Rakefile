@@ -3,7 +3,7 @@ require 'yaml'
 require 'rbconfig'
 
 
-CONFIG_FILE = "dotfiles.yml"
+CONFIG_FILE = "config.yml"
 
 
 task :load_config do
