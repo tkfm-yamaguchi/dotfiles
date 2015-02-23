@@ -28,7 +28,7 @@ brew tap peco/peco
 brew install curl
 # brew install gcc    # consuming resources a lot
 brew install git
-brew install go
+brew install go --cross-complie-common
 brew install imagemagick
 brew install rbenv ruby-build
 brew install tmux
