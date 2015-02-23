@@ -54,6 +54,7 @@ brew install caskroom/cask/brew-cask
 
 brew cask install alfred
 brew cask install bettertouchtool
+brew cask install cyberduck
 brew cask install firefox
 brew cask install gimp
 brew cask install google-chrome chrome-remote-desktop-host
