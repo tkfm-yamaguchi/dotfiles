@@ -55,6 +55,7 @@ brew install caskroom/cask/brew-cask
 brew cask install alfred
 brew cask install bettertouchtool
 brew cask install cyberduck
+brew cask install dropbox
 brew cask install firefox
 brew cask install gimp
 brew cask install google-chrome chrome-remote-desktop-host
@@ -66,6 +67,7 @@ brew cask install java
 brew cask install karabiner
 brew cask install scroll-reverser
 brew cask install skype
+brew cask install sourcetree
 brew cask install virtualbox
 brew cask install xquartz
 brew cask install xtrafinder
