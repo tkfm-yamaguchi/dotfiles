@@ -79,6 +79,7 @@ My favorite plugins:
 * Clone and setup: zsh conf
 * xcode
 * xcode License (`sudo xcodebuild -license`)
+* install 'xCode command tools' (`xcode-select --install`)
 * [homebrew](http://brew.sh) (`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`)
 * Brewfile
 * [MacVim-Kaoriya](https://github.com/splhack/macvim/tags)
