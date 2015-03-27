@@ -1,6 +1,7 @@
 
 --append=yes
 --recurse=yes
+--tag-relative=yes
 
 
 --langdef=coffee
