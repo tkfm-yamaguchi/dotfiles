@@ -45,7 +45,9 @@ brew install winetricks
 brew install zenity
 brew install scala
 brew install ctags
-
+brew install nvm
+brew install pyenv
+brew install jq
 
 
 ## cask softwares
@@ -53,6 +55,7 @@ brew install ctags
 brew install caskroom/cask/brew-cask
 
 brew cask install alfred
+brew cask install atom
 brew cask install bettertouchtool
 brew cask install cyberduck
 brew cask install dropbox
