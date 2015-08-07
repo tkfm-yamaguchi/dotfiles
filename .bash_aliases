@@ -1,6 +1,13 @@
 # coding: utf-8
 
 
+## directory traversings
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias groot='cd $(git rev-parse --show-toplevel)'
+
+
 # peco
 if type "peco" >/dev/null 2>&1; then
 
@@ -15,6 +22,7 @@ if type "peco" >/dev/null 2>&1; then
 fi
 
 
+# by env
 case `uname -s` in
     "Darwin" )
 
