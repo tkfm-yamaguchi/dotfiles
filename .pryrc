@@ -36,3 +36,7 @@ rescue LoadError => err
   warn "Failed to load 'Hirb' :("
   warn err
 end
+
+if defined?(Rails)
+  include Rails.application.routes.url_helpers
+end
