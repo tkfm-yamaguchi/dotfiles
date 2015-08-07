@@ -3,9 +3,10 @@
 # in a separated ( this ) file.
 
 [alias]
+  addu = add -u
   amend = commit --amend
-  branches = branch -a
   b = branch
+  branches = branch -a
   cancel = !git commit -a -m 'Temporary commit for cancel' && git reset --hard HEAD~
   cm = commit
   co = checkout
@@ -57,7 +58,8 @@
   enabled = true
 
 [ghq]
-  root = ~/local/usr/src
+  # root = ~/local/usr/src
+  root = ~/local/src
 
 ## Examples
 #
