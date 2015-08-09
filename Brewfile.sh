@@ -48,6 +48,9 @@ brew install ctags
 brew install nvm
 brew install pyenv
 brew install jq
+brew install opam
+brew install tree
+brew install thefuck
 
 
 ## cask softwares
@@ -71,6 +74,7 @@ brew cask install karabiner
 brew cask install scroll-reverser
 brew cask install skype
 brew cask install sourcetree
+brew cask install vagrant
 brew cask install virtualbox
 brew cask install xquartz
 brew cask install xtrafinder
