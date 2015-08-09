@@ -8,7 +8,7 @@
   b = branch
   branches = branch -a
   cancel = !git commit -a -m 'Temporary commit for cancel' && git reset --hard HEAD~
-  cm = commit
+  cm = commit -v
   co = checkout
   df = diff
   diffw = diff --color-words
