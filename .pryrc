@@ -11,9 +11,16 @@ Pry.config.prompt = proc do |obj, level, _|
   "#{prompt} (#{obj})> "
 end
 
-# Pry commands
+# Aliases
 Pry.config.commands.alias_command 'w', 'whereami'
 
+# Aliases pry-byebug
+if defined?(PryByebug)
+  Pry.commands.alias_command 'c', 'continue'
+  Pry.commands.alias_command 's', 'step'
+  Pry.commands.alias_command 'n', 'next'
+  Pry.commands.alias_command 'f', 'finish'
+end
 
 # External library configurations
 begin
