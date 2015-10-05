@@ -17,6 +17,7 @@
   push-tags = "!f(){ git push $1 --tags; }; f"
   reamend = commit --amend -C HEAD
   remotes = remote -v
+  sm = submodule
   sst = status --short --branch
   st = status
   sup = "submodule foreach \"git co master; git pull\""
