@@ -51,6 +51,8 @@ brew install jq
 brew install opam
 brew install tree
 brew install thefuck
+brew install ocaml
+brew install oniguruma
 
 
 ## cask softwares
