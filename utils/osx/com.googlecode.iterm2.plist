@@ -508,7 +508,7 @@
 	<key>NSColorPanelMode</key>
 	<string>6</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/local/usr/src/github.com/zeroyonichihachi/dotfiles/utils/osx</string>
+	<string>~/local/src/github.com/zeroyonichihachi/dotfiles/utils/osx</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{947, 539}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -523,13 +523,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1377 146 445 324 0 0 1920 1057 </string>
+	<string>780 33 445 190 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>506 397 924 485 0 0 1920 1057 </string>
+	<string>181 234 924 485 0 0 1440 877 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>965 409 384 129 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 83 1436 786 0 0 1440 877 </string>
+	<string>2 10 1432 862 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>183 68 1145 706 0 0 1440 877 </string>
+	<string>0 0 1436 786 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1258,6 +1260,10 @@
 			<string>/Users/tkfm_yamaguchi</string>
 		</dict>
 	</array>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>454496124.393731</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>465381761.677939</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1304,7 +1310,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/tkfm_yamaguchi/local/usr/src/github.com/zeroyonichihachi/dotfiles/utils/osx</string>
+	<string>/Users/tkfm_yamaguchi/local/src/github.com/zeroyonichihachi/dotfiles/utils/osx</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1320,7 +1326,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-02-22T23:46:40Z</date>
+	<date>2015-10-06T00:15:50Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1354,7 +1360,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>.Helvetica Neue DeskInterface</string>
+	<string>.AppleSystemUIFont</string>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>
@@ -1362,6 +1368,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>2.0.0.20141103</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
