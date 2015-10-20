@@ -73,6 +73,7 @@ brew cask install insomniax
 brew cask install iterm2
 brew cask install java
 brew cask install karabiner
+brew cask install owasp-zap
 brew cask install scroll-reverser
 brew cask install skype
 brew cask install sourcetree
