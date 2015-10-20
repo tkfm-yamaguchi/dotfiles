@@ -80,7 +80,6 @@ brew cask install sourcetree
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install xquartz
-brew cask install xtrafinder
 
 
 
