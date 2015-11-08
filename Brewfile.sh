@@ -20,6 +20,7 @@ brew cleanup
 brew tap sanemat/font
 brew tap homebrew/dupes
 brew tap peco/peco
+brew tap homebrew/science
 
 
 
@@ -53,6 +54,9 @@ brew install tree
 brew install thefuck
 brew install ocaml
 brew install oniguruma
+brew install openblas --build-from-source
+brew install R --with-openblas
+brew install ghostscript
 
 
 ## cask softwares
