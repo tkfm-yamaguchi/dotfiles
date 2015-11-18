@@ -26,7 +26,7 @@
   # aliases to referring log/history
   graph   = log     --graph --all                      --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset'
   hist    = log     --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset'
-  histi   = log -20 --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset'
+  g       = log -20 --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset'
   history = log     --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset %Cgreen(%cr)'
 
 [color]
