@@ -10,3 +10,5 @@ Session.vim
 ### vimperator
 /.vimperator/info
 
+### tmux plugins
+/.tmux/plugins

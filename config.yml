@@ -12,6 +12,7 @@ common:
   - .pryrc
   - .tigrc
   - .tmux.conf
+  - .tmux
   - .vimperatorrc
   - .vimperator
 
