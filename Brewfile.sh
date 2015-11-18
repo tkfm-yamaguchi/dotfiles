@@ -58,6 +58,7 @@ brew install openblas --build-from-source
 brew install R --with-openblas
 brew install ghostscript
 brew install pandoc
+brew install colordiff
 
 
 ## cask softwares
