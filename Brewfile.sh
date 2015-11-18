@@ -57,6 +57,7 @@ brew install oniguruma
 brew install openblas --build-from-source
 brew install R --with-openblas
 brew install ghostscript
+brew install pandoc
 
 
 ## cask softwares
