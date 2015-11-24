@@ -69,7 +69,7 @@ brew cask install alfred
 brew cask install atom
 brew cask install bettertouchtool
 brew cask install cyberduck
-brew cask install dropbox
+#brew cask install dropbox
 brew cask install firefox
 brew cask install gimp
 brew cask install google-chrome chrome-remote-desktop-host
