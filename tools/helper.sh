@@ -1,0 +1,10 @@
+#!/bin/bash
+
+REPOSITORY_ROOT=$(cd $(dirname $BASH_SOURCE)/..; pwd)
+
+GOPATH=$HOME/local
+PATH=$PATH:$GOPATH/bin
+GHQ_ROOT=$GOPATH/src
+
+
+export GOPATH PATH GHQ_ROOT REPOSITORY_ROOT
