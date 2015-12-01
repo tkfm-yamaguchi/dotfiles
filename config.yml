@@ -7,14 +7,15 @@ common:
   - .ctags
   - .gemrc
   - .gitconfig
+  - .gitignore_global
   - .my.gitconfig
   - .peco
   - .pryrc
   - .tigrc
-  - .tmux.conf
   - .tmux
-  - .vimperatorrc
+  - .tmux.conf
   - .vimperator
+  - .vimperatorrc
 
 darwin:
   - .bash_profile

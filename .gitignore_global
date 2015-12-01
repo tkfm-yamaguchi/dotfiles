@@ -1,0 +1,20 @@
+# vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# Finder's garbage file
+.DS_Store
+._.DS_Store
+
+# VirtualBox archive file
+*.ova
+
+# vimperator
+/.vimperator/info
+
+# tmux plugins
+/.tmux/plugins
