@@ -10,6 +10,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install golang
 
 export GOPATH=$HOME/local
+export PATH="${GOPATH}/bin:${PATH}"
 
 go get github.com/motemen/ghq
 go get github.com/peco/peco/cmd/peco
