@@ -35,6 +35,11 @@ case `uname -s` in
             alias vim='env_LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
         fi
 
+        ## hardware info
+        # The list of informations could be retrieve via:
+        #   $ system_profiler -listDataTypes
+        alias hwinfo='system_profiler SPHardwareDataType'
+
         ;;
 
 
