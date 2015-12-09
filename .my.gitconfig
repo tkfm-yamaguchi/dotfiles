@@ -33,6 +33,7 @@
   ui = true
 
 [core]
+  editor = vim
   quotepath = false
   autocrlf = input
   attributesfile = ~/.dotfiles/.gitattributes
