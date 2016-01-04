@@ -1,5 +1,7 @@
 #!/bin/bash
 
+RB_VERSION=2.2.3
+
 if [ 'which rbenv' ]; then
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
     git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
@@ -9,6 +11,6 @@ if [ 'which rbenv' ]; then
 fi
 
 which rbenv
-rbenv install 2.2.3
-rbenv global 2.2.3
+rbenv install ${RB_VERSION}
+rbenv global ${RB_VERSION}
 gem install bundler
