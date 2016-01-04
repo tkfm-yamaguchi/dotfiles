@@ -59,6 +59,7 @@ brew install R --with-openblas
 brew install ghostscript
 brew install pandoc
 brew install colordiff
+brew install git-archive-all
 
 
 ## cask softwares
