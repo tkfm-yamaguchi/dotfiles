@@ -16,6 +16,7 @@ common:
   - .tmux.conf
   - .vimperator
   - .vimperatorrc
+  - local/bin/binize
 
 darwin:
   - .bash_profile

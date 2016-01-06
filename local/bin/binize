@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+
+import os, sys
+import subprocess as sbp
+
+target_paths = []
+
+
+# Retrieve bin directory path
+gopath = os.environ.get("GOPATH")
+
+if not gopath:
+    raise ValueError('[ERROR!] "$GOPATH" environment variable should be defined.')
+
+bindir = os.path.join(gopath, 'bin')
+
+if not os.path.exists(bindir):
+    raise ValueError('[ERROR!] ' + bindir + ' should exist previously.')
+
+
+# Check target binary file path from argument
+argv = sys.argv
+
+if len(argv) < 2:
+    raise ValueError("one or multiple targets should be specified.")
+
+for target_path in argv[1:]:
+    abs_t_path = os.path.abspath(target_path)
+
+    if not os.path.exists(abs_t_path):
+        raise ValueError(target_path  + " does not exists.")
+
+    target_paths.append(abs_t_path)
+
+
+# Create symlink from target to bin directory
+print("cd " + bindir)
+os.chdir(bindir)
+
+for target_path in target_paths:
+    basename = os.path.basename(target_path)
+
+    if os.path.exists(os.path.join(bindir, basename)):
+        print("[SKIP] " + basename + " has already exist in bin directory.")
+        continue
+
+    cmd = ["ln", "-s", target_path, basename]
+
+    print(" ".join(cmd))
+    sbp.call(cmd)
+
