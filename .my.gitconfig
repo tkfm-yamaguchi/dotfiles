@@ -29,6 +29,9 @@
   g       = log -20 --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset'
   history = log     --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold blue)|%aN| %Creset%s%C(yellow)%d%Creset %Cgreen(%cr)'
 
+  # use vimdiff
+  vd = difftool --tool=vimdiff --no-prompt
+
 [color]
   ui = true
 
