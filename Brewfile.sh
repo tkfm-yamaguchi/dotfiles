@@ -21,6 +21,7 @@ brew tap sanemat/font
 brew tap homebrew/dupes
 brew tap peco/peco
 brew tap homebrew/science
+brew tap railwaycat/homebrew-emacsmacport
 
 
 
@@ -60,6 +61,7 @@ brew install ghostscript
 brew install pandoc
 brew install colordiff
 brew install git-archive-all
+brew install emacs-mac --with-spacemacs-icon
 
 
 ## cask softwares
