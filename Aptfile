@@ -4,3 +4,4 @@ golang-go
 libssh-dev
 libreadline-dev
 zlib1g-dev
+rake

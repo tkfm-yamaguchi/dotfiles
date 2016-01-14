@@ -6,6 +6,7 @@ require 'rbconfig'
 CONFIG_FILE = "config.yml"
 
 
+# utility: loads config.yml
 task :load_config do
   unless File.exist?(CONFIG_FILE)
     puts "Please create config.yml with copying config.yml.example"
@@ -23,6 +24,7 @@ task :load_config do
     @dotfiles += @config["linux"]
   end
 end
+
 
 desc "bootstrap the dotfiles to $HOME"
 task bootstrap: :load_config do

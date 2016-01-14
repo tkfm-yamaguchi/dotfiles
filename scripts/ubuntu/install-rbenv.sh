@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RB_VERSION=2.2.3
+RB_VERSION=2.3.0
 
 if [ 'which rbenv' ]; then
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
@@ -10,7 +10,10 @@ if [ 'which rbenv' ]; then
     source ~/.bashrc
 fi
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 which rbenv
+
 rbenv install ${RB_VERSION}
 rbenv global ${RB_VERSION}
 gem install bundler
