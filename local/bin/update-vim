@@ -5,13 +5,9 @@ set -ex
 
 # --------------------
 
-# Ubuntu 12.04
-# PKGPYTHON3=python3-dev
-# Ubuntu 13.04, 14.04
-# PKGPYTHON3=libpython3-dev
-
-# apt-get build-dep vim
-# apt-get install mercurial \
+# sudo apt-get -y build-dep vim
+# sudo apt-get -y install \
+#                 mercurial \
 #                 gettext \
 #                 paco \
 #                 libncurses5-dev \
@@ -20,15 +16,17 @@ set -ex
 #                 libperl-dev \
 #                 ruby-dev \
 #                 python-dev \
-#                 ${PKGPYTHON3}
-#                 luajit luajit-*.*
+#                 python3-dev \
+#                 lua5.3 liblua5.3-dev \
+#                 luajit libluajit-5.1-dev
+
 
 # --------------------
 
 COMPILED_BY="yamaguchi <tkfm.yamaguchi@gmail.com>"
 
 VIM_NAME=vim
-VIM_SRC_DIR="$HOME/local/src/code.google.com/p/vim"
+VIM_SRC_DIR="$HOME/local/src/github.com/vim/vim"
 
 # Since paco was abandoned and renamed to 'porg',
 # we switch to the enable one.
@@ -60,8 +58,8 @@ cd $VIM_SRC_DIR
 # --------------------
 
 echo "Updating repository"
-hg pull
-hg update
+git fetch
+git pull
 
 read -p "Continue? [Y/n] > " ANS
 if [[ $ANS =~ ^n|^N ]]; then
