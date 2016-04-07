@@ -525,13 +525,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>780 33 445 190 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>181 234 924 485 0 0 1440 877 </string>
+	<string>575 297 924 485 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>965 409 384 129 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2 10 1432 862 0 0 1440 877 </string>
+	<string>12 36 1852 1014 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1436 786 0 0 1440 877 </string>
+	<string>317 192 1465 786 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1237,7 +1237,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.18996857106685638</real>
+			<real>0.26007303595542908</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1260,10 +1260,12 @@
 			<string>/Users/tkfm_yamaguchi</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveShownPromoWithId_4</key>
+	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>454496124.393731</real>
+	<real>477810079.72786498</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>465381761.677939</real>
+	<real>481162905.38112998</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1322,11 +1324,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-10-06T00:15:50Z</date>
+	<date>2016-04-01T00:21:32Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1364,10 +1366,10 @@
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>2.1.1</string>
+	<string>2.1.4</string>
 </dict>
 </plist>
