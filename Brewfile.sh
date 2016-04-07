@@ -64,6 +64,8 @@ brew install git-archive-all
 brew install emacs-mac --with-spacemacs-icon
 brew install shellcheck
 brew install haskell-stack
+brew install jo
+brew install ccat
 
 
 ## cask softwares
