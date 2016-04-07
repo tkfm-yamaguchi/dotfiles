@@ -11,6 +11,16 @@ if type "rbenv" >/dev/null 2>&1; then
     eval "$(rbenv init -)"
 fi
 
+## nvm
+export NVM_DIR="$HOME/.nvm"
+if type brew >/dev/null 2>&1 ; then
+    nvm_sh="$(brew --prefix nvm)/nvm.sh"
+else
+    nvm_sh="${HOME}/.nvm/nvm.sh"
+fi
+
+[[ -f "${nvm_sh}" ]] && source "${nvm_sh}"
+
 
 ## golang
 if [ -d "$HOME/local/opt/go" ]; then
@@ -34,3 +44,8 @@ if [ -f "$HOME/.bash_aliases" ]; then
     source "$HOME/.bash_aliases"
 fi
 
+
+# Add vim path
+if [ "`uname`" == "Darwin" ]; then
+    export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
+fi
