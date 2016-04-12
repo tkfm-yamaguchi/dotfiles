@@ -1,0 +1,67 @@
+" https://gist.github.com/RobertAudi/bededdec48e4e3eb4dde
+" https://gist.github.com/assout/e4172ddf70f52f05abe2
+
+let barposition = 'bottom'
+set ktypelinkhints
+set smoothscroll
+
+unmap gt
+unmap K
+unmap gT
+unmap J
+unmap E
+unmap d
+unmap u
+unmap e
+unmap R
+unmap b
+unmap x
+unmap X
+unmap u
+unmap t
+unmap T
+unmap O
+unmap go
+unmap gO
+unmap a
+unmap p
+unmap P
+
+map <C-u> scrollPageUp
+map <C-d> scrollPageDown
+
+map b :buffer<Space>
+map B :buffer<Space>
+
+map d closeTab
+map u lastClosedTab
+
+map o :tabnew<Space>google<Space>
+map t :tabnew<Space>google<Space>
+
+map cc :chrome://
+map E :chrome://extensions<CR>
+
+map x hideDownloadsShelf
+
+map <C-n> nextTab
+map <C-p> previousTab
+
+imap <C-a> beginningOfLine
+imap <C-b> backwardChar
+imap <C-d> deleteForwardChar
+imap <C-e> endOfLine
+imap <C-f> forwardChar
+imap <C-h> deleteChar
+imap <C-i> <Nop>
+imap <C-j> <Nop>
+imap <C-k> deleteToEnd
+imap <C-l> <Nop>
+imap <C-n> forwardLine
+imap <C-o> <Nop>
+imap <C-p> backwardLine
+imap <C-u> deleteToBeginning
+imap <C-w> deleteWord
+imap <C-y> <Nop>
+
+" vim: ft=vim
