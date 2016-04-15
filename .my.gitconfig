@@ -66,7 +66,6 @@
   enabled = true
 
 [ghq]
-  # root = ~/local/usr/src
   root = ~/local/src
 
 ## Examples
