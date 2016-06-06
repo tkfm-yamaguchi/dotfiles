@@ -39,6 +39,7 @@
   editor = vim
   quotepath = false
   autocrlf = input
+  safecrlf = true
   attributesfile = ~/.dotfiles/.gitattributes
   precomposeunicode = true
   excludesfile = ~/.gitignore_global
