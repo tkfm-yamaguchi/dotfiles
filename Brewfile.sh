@@ -66,6 +66,8 @@ brew install shellcheck
 brew install haskell-stack
 brew install jo
 brew install ccat
+brew install the_silver_searcher
+brew install the_plutinum_searcher
 
 
 ## cask softwares
