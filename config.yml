@@ -11,6 +11,7 @@ common:
   - .my.gitconfig
   - .peco
   - .pryrc
+  - .ptconfig.toml
   - .tigrc
   - .tmux
   - .tmux.conf
