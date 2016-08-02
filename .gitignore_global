@@ -2,7 +2,7 @@
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
 *.un~
-Session.vim
+*[Ss]ession.vim
 .netrwhist
 *~
 
@@ -18,3 +18,6 @@ Session.vim
 
 # tmux plugins
 /.tmux/plugins
+
+# ignore ctags
+tags
