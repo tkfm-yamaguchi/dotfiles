@@ -571,10 +571,12 @@
 	<string>965 409 384 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>2088 676 620 392 1440 178 1920 1057 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>1709 300 796 473 1440 178 1920 1057 </string>
 	<key>NSWindow Frame com.apple.typography_panel_RictyDiscord-RegularForPowerline</key>
 	<string>2000 822 260 139 1440 178 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1515 277 1625 907 1440 178 1920 1057 </string>
+	<string>1443 206 1905 1017 1440 178 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>317 192 1465 786 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -1405,7 +1407,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-07T11:37:06Z</date>
+	<date>2016-08-05T02:27:17Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1446,7 +1448,11 @@
 	<integer>1</integer>
 	<key>WordCharacters</key>
 	<string> </string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.4</string>
+	<string>3.0.5</string>
 </dict>
 </plist>
