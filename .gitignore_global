@@ -21,3 +21,6 @@
 
 # ignore ctags
 tags
+
+# for IDEs
+.idea/
