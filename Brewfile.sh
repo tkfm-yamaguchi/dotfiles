@@ -68,6 +68,7 @@ brew install jo
 brew install ccat
 brew install the_silver_searcher
 brew install the_plutinum_searcher
+brew install pigz
 
 
 ## cask softwares
