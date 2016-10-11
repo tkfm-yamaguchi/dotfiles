@@ -12,7 +12,9 @@
   co = checkout
   df = diff
   dfc = diff --cached
-  dfw = diff --color-words
+  dfd = diff --word-diff
+  dfn = diff --name-only
+  dfr = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
   filelog = log -u
   fp = fetch --prune
   push-rm-tag = "!f(){ git push $1 :refs/tags/$2; }; f"
