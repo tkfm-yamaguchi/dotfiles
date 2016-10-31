@@ -49,3 +49,8 @@ fi
 if [ "`uname`" == "Darwin" ]; then
     export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
 fi
+
+# OPAM configuration
+if [ -f "$HOME/.opam/opam-init/init.sh" ]; then
+    . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+fi
