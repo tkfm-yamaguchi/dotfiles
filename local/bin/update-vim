@@ -100,7 +100,7 @@ if [ $status -ne 0 ]; then
     exit $status
 fi
 
-make
+make -j8
 
 # --------------------
 
@@ -110,4 +110,4 @@ read -p "Replace current vim. Press [Enter] key to continue..."
 sudo $SOFTWARE_MANAGER --remove --batch $VIM_NAME
 
 # sudo make install
-sudo $SOFTWARE_MANAGER --log --package=${VIM_NAME} make install
+sudo $SOFTWARE_MANAGER --log --package=$VIM_NAME make install
