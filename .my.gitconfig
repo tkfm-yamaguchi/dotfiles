@@ -84,6 +84,12 @@
 [ghq]
   root = ~/local/src
 
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge --skip %f
+  required = true
+  process = git-lfs filter-process
+
 ## Examples
 #
 #[url "git@github.com:"]
