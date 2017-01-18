@@ -49,6 +49,7 @@
   attributesfile = ~/.dotfiles/.gitattributes
   precomposeunicode = true
   excludesfile = ~/.gitignore_global
+  preloadindex = true
 
 [diff]
   algorithm = histogram
