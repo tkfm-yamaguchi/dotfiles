@@ -5,6 +5,7 @@
 *[Ss]ession.vim
 .netrwhist
 *~
+.local.vimrc
 
 # Finder's garbage file
 .DS_Store
