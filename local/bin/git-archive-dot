@@ -1,0 +1,18 @@
+#!/bin/bash
+set -eux
+
+reporoot="$(git rev-parse --show-toplevel)"
+
+if [ -f "${reporoot}/.git" ]; then
+    # XXX: current $reporoot is submodule's directory, we needs to
+    # get the root repository's .git directory path.
+    # TODO: Retrieve root repo's path from submodule's .git file,
+    # and archive root repo's .git even if it is executed in the
+    # submodule directory.
+    echo "You seems in submodule's directory. Please execute this command on repository root directory." 1>&2
+    exit 1
+fi
+
+commit="$(git --git-dir="${reporoot}/.git"  rev-parse --short HEAD)"
+
+tar zcf "dot-git.${commit}.tar.gz" -C "${reporoot}" .git

@@ -19,6 +19,7 @@ common:
   - .vimperator
   - .vimperatorrc
   - local/bin/binize
+  - local/bin/git-archive-dot
 
 darwin:
   - .bash_profile
