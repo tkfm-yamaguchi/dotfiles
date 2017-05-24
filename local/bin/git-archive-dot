@@ -15,4 +15,4 @@ fi
 
 commit="$(git --git-dir="${reporoot}/.git"  rev-parse --short HEAD)"
 
-tar zcf "dot-git.${commit}.tar.gz" -C "${reporoot}" .git
+tar zcf "dot-git.${commit}.$(date +"%Y%m%d-%H%M").tar.gz" -C "${reporoot}" .git
