@@ -86,6 +86,7 @@ make distclean
     --enable-python3interp=dynamic \
     --enable-rubyinterp \
     --enable-luainterp \
+    --enable-terminal \
     --with-vim-name=${VIM_NAME} \
     --with-compiledby="${COMPILED_BY}" \
     --with-features=huge \
