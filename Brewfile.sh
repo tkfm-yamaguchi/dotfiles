@@ -97,6 +97,8 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install xquartz
 #brew cask install dropbox
+brew cask install spectacle
+brew cask install hyperswitch
 
 
 
