@@ -54,8 +54,11 @@
 
 [diff]
   algorithm = histogram
-  # algorithm = patience
-  commpactionHeuristic = true
+  #algorithm = patience
+  # v2.9 -
+  #commpactionHeuristic = true
+  # v2.11 -
+  indentHeuristic = true
 
 [rebase]
   autosquash = true
