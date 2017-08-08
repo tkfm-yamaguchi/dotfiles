@@ -59,6 +59,7 @@ cd $VIM_SRC_DIR
 
 echo "Updating repository"
 git fetch
+git checkout -- **/tags
 git pull
 
 read -p "Continue? [Y/n] > " ANS
