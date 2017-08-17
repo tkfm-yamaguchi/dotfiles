@@ -586,9 +586,11 @@
 	<key>NSWindow Frame com.apple.typography_panel_RictyDiscord-RegularForPowerline</key>
 	<string>2000 822 260 139 1440 178 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1440 -168 1915 1039 1440 -180 1920 1080 </string>
+	<string>0 0 1625 907 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>3594 -124 745 863 3360 -1115 1080 1898 </string>
+	<string>1440 833 1075 907 1440 -180 1920 1058 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>1654 10 1405 863 1440 -180 1920 1058 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1423,13 +1425,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-07-05T23:48:04Z</date>
+	<date>2017-07-23T22:30:11Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
