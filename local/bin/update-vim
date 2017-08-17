@@ -5,6 +5,16 @@ set -ex
 
 # --------------------
 
+while getopts x OPT; do
+    case $OPT in
+        # -x : skip updating vim repository before running configure/make
+        x) NO_PULL="y"
+            ;;
+    esac
+done
+
+# --------------------
+
 # sudo apt-get -y build-dep vim
 # sudo apt-get -y install \
 #                 mercurial \
@@ -57,15 +67,17 @@ cd $VIM_SRC_DIR
 
 # --------------------
 
-echo "Updating repository"
-git fetch
-git checkout -- **/tags
-git pull
+if [ -z ${NO_PULL+x} ]; then
+    echo "updating repository"
+    git fetch
+    git checkout -- **/tags
+    git pull
 
-read -p "Continue? [Y/n] > " ANS
-if [[ $ANS =~ ^n|^N ]]; then
-    echo Quit to update
-    exit 0
+    read -p "Continue? [Y/n] > " ANS
+    if [[ $ANS =~ ^n|^N ]]; then
+        echo Quit to update
+        exit 0
+    fi
 fi
 
 # --------------------
