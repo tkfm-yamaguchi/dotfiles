@@ -27,7 +27,7 @@ begin
   require 'awesome_print'
   AwesomePrint.pry!
 rescue LoadError => err
-  warn "Failed to load 'awesome_print' :("
+  warn "[WARN] Failed to load 'awesome_print' :("
   warn err
 end
 
@@ -40,8 +40,7 @@ begin
     Hirb::View.view_or_page_output(value) || old_print.call(output, value)
   end
 rescue LoadError => err
-  warn "Failed to load 'Hirb' :("
-  warn err
+  warn "[INFO] Skip loading hirb (#{ err })"
 end
 
 if defined?(Rails)
