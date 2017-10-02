@@ -1,0 +1,6 @@
+##
+# This file only works when it is eval/sourced by the shell.
+##
+
+# for the better legibility on the dark color background
+DIR 01;04;38;05;75

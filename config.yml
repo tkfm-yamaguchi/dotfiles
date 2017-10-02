@@ -28,4 +28,5 @@ darwin:
 
 linux:
   - local/bin/update-vim
+  - .dircolors
 
