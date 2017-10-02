@@ -114,7 +114,7 @@ if [ $status -ne 0 ]; then
     exit $status
 fi
 
-make -j8
+make -j12
 
 # --------------------
 
