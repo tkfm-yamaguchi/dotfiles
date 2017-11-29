@@ -25,6 +25,7 @@ common:
 darwin:
   - .bash_profile
   - .xvimrc
+  - .vimrc_first.vim
   - Brewfile.sh
 
 linux:
