@@ -552,7 +552,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAczAAAAAAANIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAc7AAAAAAANIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -578,19 +578,19 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>2015 775 606 456 1440 178 1920 1057 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
-	<string>1785 515 735 382 1440 0 1920 1080 </string>
+	<string>1850 224 735 382 1440 0 1920 1080 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>2200 696 400 129 1440 0 1920 1058 </string>
+	<string>2200 713 400 129 1440 0 1920 1080 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>2090 499 620 392 1440 0 1920 1058 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1709 317 606 456 1440 178 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1642 542 796 473 1440 0 1920 1080 </string>
+	<string>2090 673 918 381 1440 0 1920 1080 </string>
 	<key>NSWindow Frame com.apple.typography_panel_RictyDiscord-RegularForPowerline</key>
 	<string>2000 822 260 139 1440 178 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1467 123 1625 907 1440 0 1920 1058 </string>
+	<string>1544 32 1625 930 1440 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1440 173 1625 907 1440 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -754,12 +754,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.20000000000000001</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.16078431372549021</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.14509803921568629</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -1429,7 +1433,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-27T01:00:18Z</date>
+	<date>2017-10-31T00:02:31Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1474,9 +1478,15 @@
 	<string> </string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.2</string>
+	<string>3.1.4</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
