@@ -20,6 +20,7 @@ common:
   - .vimperatorrc
   - local/bin/binize
   - local/bin/git-archive-dot
+  - local/bin/imgcat
 
 darwin:
   - .bash_profile
