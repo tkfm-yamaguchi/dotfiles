@@ -23,6 +23,7 @@ common:
   - local/bin/imgcat
 
 darwin:
+  - .alacritty.yml
   - .bash_profile
   - .xvimrc
   - .vimrc_first.vim
