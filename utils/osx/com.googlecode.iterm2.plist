@@ -478,7 +478,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
-	<false/>
+	<true/>
 	<key>HideTab</key>
 	<true/>
 	<key>HighlightTabLabels</key>
@@ -574,25 +574,25 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>2272 375 445 77 1440 0 1920 1080 </string>
+	<string>3352 613 445 77 2520 372 1920 1080 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>2015 775 606 456 1440 178 1920 1057 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
-	<string>1850 224 735 382 1440 0 1920 1080 </string>
+	<string>3094 626 735 382 2520 372 1920 1080 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>2200 713 400 129 1440 0 1920 1080 </string>
+	<string>3280 1006 400 129 2520 310 1920 1058 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>2090 499 620 392 1440 0 1920 1058 </string>
+	<string>3170 871 620 392 2520 372 1920 1058 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>1709 317 606 456 1440 178 1920 1057 </string>
+	<string>2789 516 606 469 2520 372 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2090 673 918 381 1440 0 1920 1080 </string>
+	<string>3232 850 796 473 2520 372 1920 1080 </string>
 	<key>NSWindow Frame com.apple.typography_panel_RictyDiscord-RegularForPowerline</key>
 	<string>2000 822 260 139 1440 178 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1544 32 1625 930 1440 0 1920 1080 </string>
+	<string>2760 372 1610 907 2520 372 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1440 173 1625 907 1440 0 1920 1080 </string>
+	<string>2520 327 1625 907 2520 154 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>1654 10 1405 863 1440 -180 1920 1058 </string>
 	<key>New Bookmarks</key>
@@ -1152,7 +1152,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>RictyDiscord-RegularForPowerline 20</string>
+			<string>Cica-Regular 20</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1322,7 +1322,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>1.0399096385542168</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -1338,6 +1338,8 @@
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
 	<key>NoSyncHaveShownPromoWithId_4</key>
+	<true/>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>3071EB5F-4874-48BC-B8D7-464846DDAE24</string>
@@ -1433,7 +1435,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-31T00:02:31Z</date>
+	<date>2018-05-10T00:02:26Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1483,7 +1485,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.4</string>
+	<string>3.1.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

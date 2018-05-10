@@ -22,6 +22,7 @@ brew tap homebrew/dupes
 brew tap peco/peco
 brew tap homebrew/science
 brew tap railwaycat/homebrew-emacsmacport
+brew tap caskroom/fonts
 
 
 
@@ -99,6 +100,7 @@ brew cask install xquartz
 #brew cask install dropbox
 brew cask install spectacle
 brew cask install hyperswitch
+brew cask install font-cica
 
 
 
