@@ -101,6 +101,7 @@ brew cask install xquartz
 brew cask install spectacle
 brew cask install hyperswitch
 brew cask install font-cica
+brew cask install shiftit
 
 
 
