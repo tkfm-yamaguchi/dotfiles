@@ -18,6 +18,8 @@
   filelog = log -u
   for = ! git foresta --all | less -RSX
   fp = fetch --prune
+  fpp = fetch --prune --prune-tags
+  psh = push
   push-rm-tag = "!f(){ git push $1 :refs/tags/$2; }; f"
   push-tags = "!f(){ git push $1 --tags; }; f"
   rbi = rebase -i
