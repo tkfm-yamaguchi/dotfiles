@@ -70,6 +70,8 @@ brew install ccat
 brew install the_silver_searcher
 brew install the_plutinum_searcher
 brew install pigz
+brew install ffmpeg
+brew install macvim
 
 
 ## cask softwares
