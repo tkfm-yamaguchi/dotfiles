@@ -71,7 +71,8 @@ brew install the_silver_searcher
 brew install the_plutinum_searcher
 brew install pigz
 brew install ffmpeg
-brew install macvim
+brew install macvim --with-lua --with-luajit
+brew install watch
 
 
 ## cask softwares
