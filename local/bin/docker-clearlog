@@ -1,0 +1,10 @@
+#!/bin/bash
+
+container_name=${1}
+
+if [ -z ${container_name} ]; then
+    echo "Container ID or name should be specified"
+    exit 1
+fi
+
+cat /dev/null > $(docker inspect -f '{{ .LogPath  }}' ${container_name})
