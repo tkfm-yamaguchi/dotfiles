@@ -1,4 +1,3 @@
-
 require 'rubygems' if RUBY_VERSION < '1.9'
 
 # Pry config
@@ -46,3 +45,5 @@ end
 if defined?(Rails)
   include Rails.application.routes.url_helpers
 end
+
+# vim: ft=ruby
