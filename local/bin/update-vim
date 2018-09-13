@@ -90,6 +90,7 @@ make distclean
     --prefix="$HOME/local" \
     --disable-darwin \
     --disable-selinux \
+    --disable-netbeans \
     --enable-fontset \
     --enable-gnome-check \
     --enable-gui=gtk2 \
@@ -100,11 +101,12 @@ make distclean
     --enable-rubyinterp \
     --enable-luainterp \
     --enable-terminal \
+    --enable-autoservername \
     --with-vim-name=${VIM_NAME} \
     --with-compiledby="${COMPILED_BY}" \
-    --with-features=huge \
+    --with-features=big \
     --with-tlib=ncurses \
-    --with-luajit \
+    --with-luajit
     # --with-python3-config-dir="${CONFDIRPYTHON3}"
 
 # configure status check
