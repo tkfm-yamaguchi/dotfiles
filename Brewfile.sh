@@ -73,6 +73,7 @@ brew install pigz
 brew install ffmpeg
 brew install macvim --with-lua --with-luajit
 brew install watch
+brew install ripgrep
 
 
 ## cask softwares
