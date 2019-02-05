@@ -475,6 +475,8 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideFromDockAndAppSwitcher</key>
+	<false/>
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
@@ -574,23 +576,23 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>3352 613 445 77 2520 372 1920 1080 </string>
+	<string>551 398 445 77 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>2015 775 606 456 1440 178 1920 1057 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
-	<string>3094 626 735 382 2520 372 1920 1080 </string>
+	<string>341 188 735 382 0 0 1440 900 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>3280 1006 400 129 2520 310 1920 1058 </string>
+	<string>520 561 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>3170 871 620 392 2520 372 1920 1058 </string>
+	<string>410 381 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>2789 516 606 469 2520 372 1920 1080 </string>
+	<string>171 102 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>431 1426 958 451 -281 900 1920 1058 </string>
+	<string>124 404 918 452 0 0 1440 877 </string>
 	<key>NSWindow Frame com.apple.typography_panel_RictyDiscord-RegularForPowerline</key>
 	<string>2000 822 260 139 1440 178 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-281 900 1920 1080 -281 900 1920 1058 </string>
+	<string>0 0 1440 900 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2520 327 1625 907 2520 154 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -599,6 +601,8 @@
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>Allow Title Reporting</key>
 			<false/>
@@ -757,13 +761,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.20000000000000001</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.14509803921568629</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -1153,6 +1157,8 @@
 			<false/>
 			<key>Normal Font</key>
 			<string>Cica-Regular 20</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1308,7 +1314,7 @@
 			<key>Thin Strokes</key>
 			<integer>2</integer>
 			<key>Transparency</key>
-			<real>0.1085085530874088</real>
+			<real>0.14008962563451779</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1324,7 +1330,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.0399096385542168</real>
+			<real>1</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -1339,6 +1345,8 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveShownPromoWithId_4</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
@@ -1348,6 +1356,8 @@
 	<key>NoSyncLastTipTime</key>
 	<real>487641345.27329397</real>
 	<key>NoSyncPermissionToShowTip</key>
+	<true/>
+	<key>NoSyncSuppressClipboardAccessDeniedWarning</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>486626045.00106001</real>
@@ -1437,25 +1447,27 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-30T00:29:46Z</date>
+	<date>2018-11-22T00:48:07Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.40000000596046448</real>
+	<key>StretchTabsToFillBar</key>
+	<false/>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
 	<key>TabViewType</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>ThreeFingerEmulates</key>
 	<false/>
 	<key>TmuxDashboardLimit</key>
@@ -1487,7 +1499,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
