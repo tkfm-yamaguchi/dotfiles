@@ -74,6 +74,7 @@ brew install ffmpeg
 brew install macvim --with-lua --with-luajit
 brew install watch
 brew install ripgrep
+brew install gibo
 
 
 ## cask softwares
