@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# dein
+vim -c 'try | call dein#update() | finally | qall! | endtry' \
+  -u ~/.vim/dein/vimrc \
+  -U NONE \
+  -i NONE \
+  -V1 \
+  -e \
+  -N
