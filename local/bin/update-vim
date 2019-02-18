@@ -123,7 +123,7 @@ make -j12
 read -p "Replace current vim. Press [Enter] key to continue..."
 
 # uninstall
-sudo $SOFTWARE_MANAGER --remove --batch $VIM_NAME
+#sudo $SOFTWARE_MANAGER --remove --batch $VIM_NAME
 
 # sudo make install
 sudo $SOFTWARE_MANAGER --log --package=$VIM_NAME make install
