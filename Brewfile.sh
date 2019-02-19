@@ -18,9 +18,7 @@ brew cleanup
 ## add repositories
 
 brew tap sanemat/font
-brew tap homebrew/dupes
 brew tap peco/peco
-brew tap homebrew/science
 brew tap railwaycat/homebrew-emacsmacport
 brew tap caskroom/fonts
 
