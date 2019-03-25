@@ -14,13 +14,14 @@ common:
   - .psqlrc
   - .ptconfig.toml
   - .tigrc
-  - .tmux
   - .tmux.conf
   - .vimperator
   - .vimperatorrc
   - local/bin/binize
   - local/bin/git-archive-dot
   - local/bin/imgcat
+  - local/bin/tvim
+  - local/bin/tcd
 
 darwin:
   - .alacritty.yml

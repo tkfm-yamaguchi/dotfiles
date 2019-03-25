@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+fpath=$(cd $(dirname ${1}) && pwd)/$(basename ${1})
+
+if [ -f ${fpath} ]; then
+  /bin/echo -e "\x1b]51;[\"drop\", \"${fpath}\"]\x07"
+else
+  echo "not found: ${fpath}" >&2
+  exit 1
+fi
