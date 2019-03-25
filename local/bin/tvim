@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ ! -n "${VIM_TERMINAL}" ]; then
+  echo "This command should be called from terminal on Vim" >&2
+  exit 1
+fi
+
 fpath=$(cd $(dirname ${1}) && pwd)/$(basename ${1})
 
 if [ -f ${fpath} ]; then

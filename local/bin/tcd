@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
+if [ ! -n "${VIM_TERMINAL}" ]; then
+  echo "This command should be called from terminal on Vim" >&2
+  exit 1
+fi
+
 /bin/echo -e "\x1b]51;[\"call\", \"Tapi_Setcd\", [\"`pwd`\"]]\x07"
