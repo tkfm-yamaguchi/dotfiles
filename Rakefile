@@ -46,3 +46,7 @@ task clean: :load_config do
   end
 end
 
+desc "link some useful binaries into PATH locations"
+task :mklink do
+  ln_s "/usr/local/share/git-core/contrib/diff-highlight/diff-highlight", "/usr/local/bin"
+end
