@@ -1,4 +1,22 @@
 
+## Bootstrap
+
+```
+$ xcode-select --install
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew install go
+$ echo '
+export GOPATH=/Users/yamaguchi/local
+export PATH="${PATH}:/Users/yamaguchi/local/bin"
+' >> ~/.bashrc
+$ go get github.com/motemen/ghq
+$ ghq get zeroyonichihachi/dotfiles
+$ cd ~/local/src/zeroyonichihachi/dotfiles
+$ rake bootstrap
+$ ./Brewfile.sh
+```
+
+
 ## Hierarchy
 
 ```
