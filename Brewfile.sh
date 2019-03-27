@@ -79,5 +79,6 @@ brew cask install \
 	owasp-zap \
 	scroll-reverser \
 	font-cica \
+	font-hack-nerd-font \
 	xquartz
 
