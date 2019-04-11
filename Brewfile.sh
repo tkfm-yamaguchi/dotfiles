@@ -29,12 +29,13 @@ brew install \
 	ccat \
 	colordiff \
 	ctags \
-       	curl \
+	curl \
 	ffmpeg \
 	ghostscript \
 	gibo \
 	git \
 	git-archive-all \
+	git-lfs \
 	htop-osx \
 	imagemagick \
 	jo \
@@ -53,6 +54,7 @@ brew install \
 	ripgrep \
 	shellcheck \
 	thefuck \
+	tig \
 	tmux \
 	tree \
 	watch \
