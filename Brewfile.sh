@@ -55,6 +55,7 @@ brew install \
 	shellcheck \
 	thefuck \
 	tig \
+	tldr \
 	tmux \
 	tree \
 	watch \
