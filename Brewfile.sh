@@ -70,9 +70,11 @@ brew install \
 brew install caskroom/cask/brew-cask
 
 brew cask install \
-	alfred
+	alfred \
 	bettertouchtool \
 	firefox \
+	font-cica \
+	font-hack-nerd-font \
 	gimp \
 	google-chrome chrome-remote-desktop-host \
 	google-japanese-ime \
@@ -81,7 +83,6 @@ brew cask install \
 	karabiner-elements \
 	owasp-zap \
 	scroll-reverser \
-	font-cica \
-	font-hack-nerd-font \
+	the-unarchiver \
 	xquartz
 
