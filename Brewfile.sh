@@ -52,6 +52,7 @@ brew install \
 	rbenv ruby-build \
 	reattach-to-user-namespace \
 	ripgrep \
+	roswell \
 	shellcheck \
 	thefuck \
 	tig \
@@ -76,13 +77,8 @@ brew cask install \
 	font-cica \
 	font-hack-nerd-font \
 	gimp \
-	google-chrome chrome-remote-desktop-host \
-	google-japanese-ime \
 	inkscape \
 	iterm2 \
-	karabiner-elements \
 	owasp-zap \
-	scroll-reverser \
-	the-unarchiver \
-	xquartz
+  the-unarchiver
 
