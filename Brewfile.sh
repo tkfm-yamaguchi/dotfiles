@@ -26,6 +26,7 @@ brew tap caskroom/fonts
 
 brew install \
 	R \
+	awscli \
 	ccat \
 	colordiff \
 	ctags \
