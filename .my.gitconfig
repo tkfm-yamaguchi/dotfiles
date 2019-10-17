@@ -51,7 +51,6 @@
   safecrlf = true
   attributesfile = ~/.dotfiles/.gitattributes
   precomposeunicode = true
-  excludesfile = ~/.gitignore_global
   preloadindex = true
 
 [diff]

@@ -7,7 +7,7 @@ common:
   - .ctags
   - .gemrc
   - .gitconfig
-  - .gitignore_global
+  - .config/git/ignore
   - .my.gitconfig
   - .peco
   - .pryrc

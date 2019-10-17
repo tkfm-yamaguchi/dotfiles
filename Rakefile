@@ -31,6 +31,9 @@ task bootstrap: :load_config do
   cd ENV["HOME"] do
     @dotfiles.each do |dotfile|
       unless File.exist?(dotfile)
+        directory = File.dirname(dotfile)
+        mkdir_p directory unless Dir.exist?(directory)
+
         ln_s File.join(__dir__, dotfile), dotfile
       end
     end
