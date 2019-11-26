@@ -19,6 +19,7 @@ common:
   - .vimperatorrc
   - local/bin/binize
   - local/bin/git-archive-dot
+  - local/bin/git-rebase-all
   - local/bin/imgcat
   - local/bin/tvim
   - local/bin/tcd

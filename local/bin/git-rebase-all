@@ -1,0 +1,26 @@
+#!/bin/bash
+# set -eux
+
+function usage() {
+  echo 'Git Rebase-All command:
+  $ git rebase-all <base branch> <target branch> (<target branch> ...)
+
+  `rebase-all` executes `git rebase` which move the root of <target branch>
+  onto <base branch>.
+  Differ from `git rebase`, you can execute `rebase` command for the multiple
+  target branch at once. You should specify more than 2 arguments, base branch
+  for the first argument, and the rest would be target branch to be rebased.'
+}
+
+
+if [ $# -lt 2 ]; then
+  usage
+  exit 1
+fi
+
+baseBranch=${1}
+
+for targetBranch in "${@:2}"; do
+  echo "git rebase ${baseBranch} ${targetBranch}"
+  git rebase ${baseBranch} ${targetBranch}
+done
