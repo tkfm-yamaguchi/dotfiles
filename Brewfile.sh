@@ -28,6 +28,7 @@ brew install \
 	R \
 	awscli \
 	ccat \
+	circleci \
 	colordiff \
 	ctags \
 	curl \
