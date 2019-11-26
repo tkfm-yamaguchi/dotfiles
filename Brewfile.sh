@@ -39,6 +39,7 @@ brew install \
 	git-archive-all \
 	git-lfs \
 	htop-osx \
+	hub \
 	imagemagick \
 	jo \
 	jq \
