@@ -23,6 +23,7 @@ common:
   - local/bin/imgcat
   - local/bin/tvim
   - local/bin/tcd
+  - local/bin/vim-plugin-slowness-index
 
 darwin:
   - .alacritty.yml
