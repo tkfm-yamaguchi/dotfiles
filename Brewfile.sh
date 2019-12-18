@@ -44,6 +44,7 @@ brew install \
 	jo \
 	jq \
 	macvim \
+	neovim \
 	nkf \
 	nvm \
 	oniguruma \
