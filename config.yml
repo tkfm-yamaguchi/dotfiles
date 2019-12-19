@@ -8,6 +8,7 @@ common:
   - .gemrc
   - .gitconfig
   - .config/git/ignore
+  - .config/nvim
   - .my.gitconfig
   - .peco
   - .pryrc
