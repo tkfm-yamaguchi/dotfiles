@@ -54,3 +54,6 @@ nnoremap [prefix]tb :BTerminal<CR>
 " - :terminal has different options/features from vim
 "   - it doesn't a effect to splitting window
 " - GUI interface on macOS / Linux ?
+" - <C-d> doesn't scrolls after bottom line shown
+"   - it can be scrolled in vim until bottom line reaching to the top of
+"   window
