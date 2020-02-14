@@ -1,0 +1,60 @@
+#!/bin/bash
+# coding: utf-8
+
+set -ex
+
+# --------------------
+
+COMPILED_BY="yamaguchi <tkfm.yamaguchi@gmail.com>"
+VIM_SRC_DIR="$HOME/local/src/github.com/vim/vim"
+
+# --------------------
+
+while getopts x OPT; do
+    case $OPT in
+        # -x : skip updating vim repository before running configure/make
+        x) NO_PULL="y"
+            ;;
+    esac
+done
+
+# --------------------
+
+cd $VIM_SRC_DIR
+
+# --------------------
+
+if [ -z ${NO_PULL+x} ]; then
+    echo "updating repository"
+    git fetch
+    git checkout -- **/tags
+    git pull
+
+    read -p "Continue? [Y/n] > " ANS
+    if [[ $ANS =~ ^n|^N ]]; then
+        echo Quit to update
+        exit 0
+    fi
+fi
+
+# --------------------
+
+make distclean
+
+./configure                           \
+  --disable-selinux                   \
+  --disable-netbeans                  \
+  --enable-fail-if-missing            \
+  --enable-luainterp                  \
+  --enable-multibyte                  \
+  --enable-pythoninterp               \
+  --enable-rubyinterp                 \
+  --enable-terminal                   \
+  --prefix="$HOME/local"              \
+  --with-compiledby="${COMPILED_BY}"  \
+  --with-features=huge                \
+  --with-lua-prefix=/usr/local        \
+  --with-luajit
+
+make -j8
+make install
