@@ -33,7 +33,7 @@ done
 
 # --------------------
 
-COMPILED_BY="yamaguchi <tkfm.yamaguchi@gmail.com>"
+COMPILED_BY="tyamaguchi <tkfm.yamaguchi@gmail.com>"
 
 VIM_NAME=vim
 VIM_SRC_DIR="$HOME/local/src/github.com/vim/vim"
