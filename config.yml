@@ -32,6 +32,7 @@ darwin:
   - .xvimrc
   - .vimrc_first.vim
   - Brewfile.sh
+  - local/bin/update-vim-mac
 
 linux:
   - local/bin/update-vim
