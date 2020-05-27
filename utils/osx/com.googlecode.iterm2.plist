@@ -567,7 +567,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1080 0 0 1920 1080 </string>
+	<string>0 0 2560 1440 0 0 2560 1440 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1344,7 +1344,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>957586D9-D63D-40EA-BDC6-58E0D6C86384</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>59</integer>
+	<integer>64</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>591943580.28039503</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2129,7 +2129,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-29T23:49:32Z</date>
+	<date>2020-05-25T23:53:45Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -2141,7 +2141,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
