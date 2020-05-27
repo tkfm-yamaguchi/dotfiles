@@ -32,6 +32,7 @@ brew install \
 	colordiff \
 	ctags \
 	curl \
+	delta \
 	ffmpeg \
 	ghostscript \
 	gibo \
