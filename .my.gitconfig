@@ -28,6 +28,8 @@
   rbia = rebase -i --autosquash
   reamend = commit --amend -C HEAD
   remotes = remote -v
+  rs = restore
+  rss = restore --staged
   sm = submodule
   sst = status --short --branch
   st = status
