@@ -87,6 +87,10 @@
   show = "diff-highlight | less"
   diff = "diff-highlight | less"
 
+[pull]
+  # do not apply '--no-ff' while pull
+  ff = only
+
 [push]
   default = simple
 
