@@ -33,6 +33,8 @@
   sm = submodule
   sst = status --short --branch
   st = status
+  sw = switch
+  swc = switch -c
   sup = "submodule foreach \"git co master; git pull\""
   unstage = reset HEAD
 
