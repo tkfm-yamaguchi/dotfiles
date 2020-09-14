@@ -563,7 +563,7 @@
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>531 978 735 382 0 0 2560 1440 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>640 690 400 129 0 0 1680 1050 </string>
+	<string>1080 982 400 129 0 0 2560 1440 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -578,7 +578,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<false/>
+			<true/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1129,7 +1129,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>Cica-Regular 20</string>
+			<string>Cica-Regular 22</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1318,12 +1318,13 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.9</string>
-		<string>3.3.5</string>
+		<string>3.3.11</string>
 		<string>3.3.8</string>
-		<string>3.3.4</string>
-		<string>3.3.7</string>
 		<string>3.3.6</string>
+		<string>3.3.5</string>
+		<string>3.3.7</string>
+		<string>3.3.9</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -1348,7 +1349,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>957586D9-D63D-40EA-BDC6-58E0D6C86384</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>65</integer>
+	<integer>69</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>591943580.28039503</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2137,11 +2138,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-26T23:53:47Z</date>
+	<date>2020-06-25T21:28:17Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>2653163799</integer>
+	<integer>2278691456</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2199,7 +2200,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.9</string>
+	<string>3.3.11</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
