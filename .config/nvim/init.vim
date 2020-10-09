@@ -30,6 +30,7 @@ command! -nargs=* Terminal split | terminal <args>
 command! -nargs=* VTerminal vsplit | terminal <args>
 command! -nargs=* TTerminal tabnew | terminal <args>
 command! -nargs=* BTerminal botright split | resize 8 | terminal <args>
+command! -nargs=* ZeroTerminal 0tabnew | terminal <args>
 " }}}
 
 
@@ -40,6 +41,7 @@ nnoremap [prefix]tc :terminal<CR>
 nnoremap [prefix]tv :VTerminal<CR>
 nnoremap [prefix]tt :TTerminal<CR>
 nnoremap [prefix]tb :BTerminal<CR>
+nnoremap [prefix]t0 :ZeroTerminal<CR>
 " }}}
 
 
