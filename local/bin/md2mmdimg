@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'pathname'
+require 'tempfile'
+
+if __FILE__ == $0
+  md_path = Pathname(ARGV[0])
+  outpath = md_path.sub_ext('.png')
+
+  unless md_path.exist?
+    STDERR.put('path to markdown should be specified.')
+    exit 1
+  end
+
+  doc = md_path.read.scan(/```mermaid([^`]+)```/)[0][0]
+
+  Tempfile.create('mmd-conv') do |file|
+    file.write(doc)
+    file.close
+
+    `mmdc -i #{file.path} -o #{outpath}`
+  end
+
+  puts "#{outpath} has been created."
+end
