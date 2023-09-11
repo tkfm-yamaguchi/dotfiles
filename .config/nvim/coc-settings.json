@@ -1,0 +1,43 @@
+{
+  "diagnostic-languageserver.mergeConfig": true,
+  "diagnostic-languageserver.trace.server": "verbose",
+  "diagnostic-languageserver.filetypes": {
+    "php": ["phpstan"]
+  },
+  "diagnostic-languageserver.linters": {
+    "phpstan": {
+      "command": "./bin/phpstan"
+    },
+    "actionlint": {
+      "command": "actionlint",
+      "rootPatterns": ["workflows"],
+      "ignores": ["!workflows"],
+      "debounce": 100,
+      "offsetLine": 0,
+      "offsetColumn": 0,
+      "args": ["-oneline", "%relativepath"],
+      "sourceName": "actionlint",
+      "formatLines": 1,
+      "formatPattern": [
+        "^([^:]+):(\\d+):(\\d+):\\s+(.*)$",
+        {
+          "line": 2,
+          "column": 3,
+          "message": 4
+        }
+      ]
+    }
+  },
+  "intelephense.format.enable": false,
+  "tabnine.priority": 80,
+  "coc.preferences.useQuickfixForLocations": true,
+  "suggest.noselect": true,
+  "suggest.enablePreselect": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "vue",
+    "php",
+    "typescript",
+    "javascript"
+  ]
+}
