@@ -11,6 +11,9 @@ bind main V !git revert %(commit)
 # Move cursor, also prevents gc
 bind generic g move-first-line
 bind generic G move-last-line
+
+# Copy the commit hash to clipboard
+bind generic Y !@sh -c "git rev-parse --short %(commit) | tr -d '\n' | pbcopy"
 # }}}
 
 # vim: ft=conf foldmethod=marker
