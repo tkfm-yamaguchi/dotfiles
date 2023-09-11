@@ -33,6 +33,7 @@ brew install \
 	ctags \
 	curl \
 	delta \
+	exa \
 	ffmpeg \
 	ghostscript \
 	gibo \
