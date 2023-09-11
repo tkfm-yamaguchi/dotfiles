@@ -5,6 +5,3 @@
 [include]
   path = ~/.my.gitconfig
   path = ~/.local.gitconfig
-
-[credential]
-	helper = cache

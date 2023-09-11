@@ -15,6 +15,7 @@
   dfd = diff --word-diff
   dfn = diff --name-only
   dfr = diff --color-words --word-diff-regex='\\w+|[^[:space:]]'
+  dft = difftool
   filelog = log -u
   for = ! git foresta --all | less -RSX
   fp = fetch --prune
@@ -35,12 +36,17 @@
   st = status
   sw = switch
   swc = switch -c
+  sync = "!sh -c 'git checkout --quiet --detach HEAD && \
+    git fetch origin main:main develop:develop ; \
+    git checkout --quiet -'"
   sup = "submodule foreach \"git co master; git pull\""
   unstage = reset HEAD
+  # show-branch = symbolic-ref --short HEAD
 
   # aliases to referring log/history
   graph   = log     --graph --all                      --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset'
   hist    = log     --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold cyan)|%aN| %Creset%s%C(yellow)%d%Creset'
+  hist-b  = log     --graph       --color --date=short --pretty=format:'%Cred%h%Creset %C(bold cyan)|%aN| %Creset%s%C(yellow)%d%Creset'
   g       = log -20 --graph --all --color --date=short --pretty=format:'%Cred%h%Creset %C(bold cyan)|%aN| %Creset%s%C(yellow)%d%Creset'
   history = log --date=format:'%Y-%m-%d %H:%M:%S %z' --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold cyan)|%aN|%C(reset) %C(white)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(bold white)%s%C(reset) %C(dim white)%C(reset)' --all
 
@@ -51,14 +57,25 @@
   ui = true
 
 [core]
-  editor = vim
+  # editor = vim
+  editor = nvim
   quotepath = false
   autocrlf = input
   safecrlf = true
   attributesfile = ~/.dotfiles/.gitattributes
   precomposeunicode = true
   preloadindex = true
-  # pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+  excludesfile = ~/.gitignore_global
+  pager = delta
+	ignorecase = false
+
+[delta]
+  navigate = true
+  light = false
+  side-by-side = true
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  syntax-theme = Monokai Extended
 
 [diff]
   algorithm = histogram
@@ -67,9 +84,11 @@
   #commpactionHeuristic = true
   # v2.11 -
   indentHeuristic = true
+  tool = difftastic
+  colorMoved = default
 
-[rebase]
-  autosquash = true
+[merge]
+  conflictstyle = diff3
 
 [diff "json"]
   textconv = "perl -MJSON -0e \"print JSON->new->canonical->pretty->encode(decode_json(<>))\""
@@ -78,14 +97,21 @@
 [diff "exif"]
   textconv = "exiftool"
 
-[interactive]
-  diffFilter = diff-highlight
-  # diffFilter = delta --color-only
+[difftool]
+  prompt = false
 
-[pager]
-  log  = "diff-highlight | less"
-  show = "diff-highlight | less"
-  diff = "diff-highlight | less"
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+
+[interactive]
+  # diffFilter = diff-highlight
+  diffFilter = delta --color-only
+
+# [pager]
+#   log  = "diff-highlight | less"
+#   show = "diff-highlight | less"
+#   diff = "diff-highlight | less"
+#   difftool = true
 
 [pull]
   # do not apply '--no-ff' while pull
@@ -93,6 +119,9 @@
 
 [push]
   default = simple
+
+[rebase]
+  autosquash = true
 
 # http://git-scm.com/docs/git-rerere.html
 # http://d.hatena.ne.jp/unpush/20091010/1255186302
@@ -108,12 +137,19 @@
   process = git-lfs filter-process --skip
   required = true
 
+[url "ssh://git@github.com"]
+	insteadOf = https://github.com
+
+[credential]
+	helper = cache
+
+[init]
+	defaultBranch = main
+
 ## Examples
 #
 #[url "git@github.com:"]
 #  pushinsteadof = "git://github.com/"
 #  pushinsteadof = "https://github.com/"
-
-
 
 # vim: ft=gitconfig sw=2 ts=2
