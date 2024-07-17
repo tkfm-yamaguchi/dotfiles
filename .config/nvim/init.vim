@@ -8,19 +8,24 @@ source ~/.vim/vimrc
 
 
 "" Options {{{
+augroup MyNvimInit
+  autocmd!
+augroup END
+
 set guicursor=a:blinkon0 " cursor with no blink
+" FIXME: Autocmd is not defined.
 
 " set options for terminal window
 " NOTE: because of the difference of terminal opening event name (vim:
 " 'TerminalOpen', nvim: 'TermOpen'), here set the exactly same options
 " as be written in vimrc.
-Autocmd TermOpen * setlocal
+autocmd MyNvimInit TermOpen * setlocal
 \ norelativenumber
 \ nonumber
 \ foldcolumn=0
 \ signcolumn=no
 
-Autocmd TermOpen * startinsert
+autocmd MyNvimInit TermOpen * startinsert
 " }}}
 
 

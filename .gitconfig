@@ -5,3 +5,5 @@
 [include]
   path = ~/.my.gitconfig
   path = ~/.local.gitconfig
+[rebase]
+	autostash = true

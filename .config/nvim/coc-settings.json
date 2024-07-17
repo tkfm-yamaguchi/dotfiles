@@ -6,7 +6,8 @@
   },
   "diagnostic-languageserver.linters": {
     "phpstan": {
-      "command": "./bin/phpstan"
+      "command": "./bin/phpstan",
+      "args": "-c module/web/phpstan.neon.dist"
     },
     "actionlint": {
       "command": "actionlint",
@@ -33,11 +34,15 @@
   "coc.preferences.useQuickfixForLocations": true,
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "vue",
-    "php",
-    "typescript",
-    "javascript"
-  ]
+  "coc.preferences.formatOnSave": false,
+  "vue.server.additionalExtensions": ["vue"],
+  "languageserver": {
+    "graphql": {
+      "command": "graphql-lsp",
+      "args": ["server", "-m", "stream"],
+      "trace.server": "verbose",
+      "filetypes": ["typescript", "typescriptreact", "graphql"]
+    }
+  },
+  "coc.source.iced.enable": true
 }
