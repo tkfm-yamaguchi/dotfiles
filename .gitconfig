@@ -7,3 +7,5 @@
   path = ~/.local.gitconfig
 [rebase]
 	autostash = true
+[alias]
+	lg = log --graph --oneline --decorate --all

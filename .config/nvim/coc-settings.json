@@ -7,7 +7,7 @@
   "diagnostic-languageserver.linters": {
     "phpstan": {
       "command": "./bin/phpstan",
-      "args": "-c module/web/phpstan.neon.dist"
+      "args": "analyze --configuration=module/web/phpstan.neon.dist --memory-limit=1G --no-progress --error-format=raw"
     },
     "actionlint": {
       "command": "actionlint",
@@ -34,7 +34,19 @@
   "coc.preferences.useQuickfixForLocations": true,
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
-  "coc.preferences.formatOnSave": false,
+  "coc.preferences.formatOnSaveFileType": [
+    "javascript",
+    "typescript",
+    "json",
+    "graphql",
+    "markdown",
+    "html",
+    "css",
+    "scss",
+    "less",
+    "vue",
+    "php"
+  ],
   "vue.server.additionalExtensions": ["vue"],
   "languageserver": {
     "graphql": {
@@ -44,5 +56,9 @@
       "filetypes": ["typescript", "typescriptreact", "graphql"]
     }
   },
-  "coc.source.iced.enable": true
+  "coc.source.iced.enable": true,
+  "eslint.packageManager": "pnpm",
+  "eslint.nodePath": "./node_modules",
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
 }
